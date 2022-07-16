@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkella</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/429472780e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="site logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <!-- creates nav links and social icons -->
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook-f"></i>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="#">DOWNLOADS</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Channing Tatum</h1>
+                <h2>Author</h2>
+                <p>Channing Tatum has established himself as a leading actor, producer and now director with his debut
+                    film, DOG, which he is co-directing with his production partner, Reid Carolin. Together they founded
+                    their production company, Free Association along with Peter Kiernan. Free Association has produced
+                    the 21 Jump Street and Magic Mike franchises. They also produce the worldwide stage experience,
+                    Magic Mike Live which premiered in Las Vegas and expanded to London, Berlin and Australia. However,
+                    his favorite role to date is being father to his six-year-old daughter, Everly, who loves sparkly,
+                    rainbow-y things. He currently resides in Los Angeles.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/channing-tatum-flirt-800x599.jpg" alt="image of author">
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------footer----------- -->
+    <footer class="footer">
+        <div>
+            <a href="#" class="footer_button">Terms of User</a>
+            <a href="#" class="footer_button">Privacy Notice</a>
+            <a href="#" class="footer_button">Ads and Cookies</a>
+        </div>
+    </footer>
+
+
+    <!-- ------------ adds javascript for header menu ------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
