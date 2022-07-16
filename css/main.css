@@ -171,13 +171,15 @@ footer {
 
 
 
-
+/* changes layout and nav based on mobile view */
 
 @media(max-width: 700px) {
 
     .nav-links ul li {
         display: block;
     }
+
+/* hides nav so it is out of view until you click the hamburger menu icon */
 
     .nav-links {
         position: fixed;
@@ -213,6 +215,7 @@ footer {
         padding: 30px;
     }
 
+    /* hides arrow icons when in mobile view */
     .fa-arrow-left {
         display: none;
     }
@@ -236,12 +239,12 @@ h1 {
 }
 
 p {
-    color: rgb(34, 34, 34);
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
 
+/* allows rows to be displayed side-by-side using flex */
 .row {
     margin-top: 5%;
     display: flex;
@@ -258,10 +261,9 @@ h3 {
 .title-img {
     margin: 50px auto;
     width: 60%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/Sparkella-zoom-3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(images/Sparkella-zoom-3.jpg);
     background-position: center;
     background-size: cover;
-    /* border-radius: 10px; */
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -330,18 +332,18 @@ h3 {
     padding: 15px 0 25px;
 }
 
-.red-btn {
+.fade-btn {
     border: 1px solid #51009A;
     background: transparent;
     color: #51009A;
 }
 
-.red-btn:hover {
+.fade-btn:hover {
     color: white;
 }
 
 
-/* -------------contact us------------- */
+/* -------------contact us page ------------- */
 
 .location {
     width: 80%;
