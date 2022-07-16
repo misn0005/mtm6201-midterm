@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkella</title>
+    <!-- links css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- loads google fonts and font awesome icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/429472780e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- creates main navigation in the header  -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="site logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <!-- creates nav links and social icons -->
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook-f"></i>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="#">DOWNLOADS</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+
+    <section class="title">
+        <div>
+            <img src="images/logo.png" alt="site logo">
+
+            <!-- positions left and right arrow icons on each side of the main site image -->
+            <i class="fa fa-arrow-left"></i>
+            <i class="fa fa-arrow-right"></i>
+        </div>
+    </section>
+
+
+    <!-- -------call to action-------- -->
+    <section class="title-img"></section>
+
+    <section class="dots">
+        <div>
+            <i class="fa fa-circle-dot"></i>
+            <i class="fa fa-circle-notch"></i>
+        </div>
+    </section>
+
+
+
+    <div class="text">
+        <p>Leading actor, producer, director and New York Times-bestselling author Channing Tatum's Sparkella picture
+            book series is a charming ode to self-esteem and the love between a father and daughter.</p>
+    </div>
+
+
+    <!-- ----------footer----------- -->
+    <footer class="footer">
+        <div>
+            <a href="#" class="footer_button">Terms of User</a>
+            <a href="#" class="footer_button">Privacy Notice</a>
+            <a href="#" class="footer_button">Ads and Cookies</a>
+        </div>
+    </footer>
+
+    <!-- ------------ assignment outline mentioned no use of bootstrap, but didnt mention javascript, so i wanted to try something fun for mobile navigation------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
