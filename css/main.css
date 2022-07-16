@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* adds background colour to entire page */
+body {
+    background-color: #FAF1FF;
+}
+
+/* adds background colour and sizes header */
+.header {
+    background-color: #51009A;
+    min-height: 100px;
+    width: 100%;
+}
+
+/* makes sure icons are on the rightmost side of the header */
+.header .fa {
+    float: right;
+    padding-top: 10px;
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* sizes logo in header */
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* creates underline animation when hovering over nav items */
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* makes icons white */
+
+nav .fa {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* sizes and centers logo on the page */
+
+.title img {
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-top: 50px;
+}
+
+/* styles buttons */
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* adds hover animation that changes colours of buttons */
+
+.hero-btn:hover {
+    border: 1px solid #51009A;
+    background: #51009A;
+    transition: 1s;
+}
+
+/* hides hamburger menu icons when in mobile view */
+
+nav .fa-xmark {
+    display: none;
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+/* colours and centers circle icons */
+
+.dots {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.fa-circle-dot {
+    padding-right: 10px;
+    color: #51009A;
+}
+
+.fa-circle-notch {
+    padding-left: 10px;
+    color: #51009A;
+}
+
+/* centers text */
+
+.text {
+    margin: auto;
+    width: 450px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* adds footer background colour and width */
+
+footer {
+    width: 100%;
+    /* position: fixed; */
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.footer_button {
+    text-decoration: none;
+    font-size: .8rem;
+    color: #51009A;
+    background-color: white;
+    margin-right: 20px;
+    float: left;
+    margin-left: 40px;
+}
+
+
+
+
+
+@media(max-width: 700px) {
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #51009A;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    /* displays hamburger menu icons in nav when in mobile view */
+
+    nav .fa-xmark {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav .fa-bars {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .fa-arrow-left {
+        display: none;
+    }
+
+    .fa-arrow-right {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: rgb(34, 34, 34);
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.title-img {
+    margin: 50px auto;
+    width: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/Sparkella-zoom-3.jpg);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 10px; */
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+/* colours and positions arrow icons beside main site image */
+
+.fa-arrow-left {
+
+    float: left;
+    color: #51009A;
+    margin-top: 250px;
+    font-size: 1.5em;
+    margin-left: 200px;
+}
+
+
+.fa-arrow-right {
+
+    float: right;
+    color: #51009A;
+    margin-top: 250px;
+    font-size: 1.5em;
+    margin-right: 200px;
+
+}
+
+/* -----------footer------------- */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+
+
+/* --------------about page-------------- */
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+.about-col {
+    padding-top: 0;
+}
+
+.about-col p {
+    padding: 15px 0 25px;
+}
+
+.red-btn {
+    border: 1px solid #51009A;
+    background: transparent;
+    color: #51009A;
+}
+
+.red-btn:hover {
+    color: white;
+}
+
+
+/* -------------contact us------------- */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #51009A;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+/* creates shaking animation to be used on the phone icon */
+
+.fa-phone {
+    animation: shake 1s ease infinite;
+}
+
+@keyframes shake {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
