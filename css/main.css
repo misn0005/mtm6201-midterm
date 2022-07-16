@@ -261,11 +261,15 @@ h3 {
 .title-img {
     margin: 50px auto;
     width: 60%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(images/Sparkella-zoom-3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/images/Sparkella-zoom-3.jpg");
     background-position: center;
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.title-img img {
+    width: 100%;
 }
 
 /* colours and positions arrow icons beside main site image */
@@ -315,6 +319,7 @@ h3 {
     padding-bottom: 50px;
 }
 
+/* outlines size of colums */
 .about-col {
     flex-basis: 48%;
     padding: 30px 2px;
@@ -332,11 +337,14 @@ h3 {
     padding: 15px 0 25px;
 }
 
+/* styles button */
 .fade-btn {
     border: 1px solid #51009A;
     background: transparent;
     color: #51009A;
 }
+
+/* makes button fade diffrent colours when hovering */
 
 .fade-btn:hover {
     color: white;
@@ -351,6 +359,7 @@ h3 {
     padding: 80px 0;
 }
 
+/* makes map stretch the entire container */
 .location iframe {
     width: 100%;
 }
@@ -360,8 +369,9 @@ h3 {
     margin: auto;
 }
 
+/* splits colums evenly across our page */
 .contact-col {
-    flex-basis: 48%;
+    flex-basis: 50%;
     margin-bottom: 30px;
 }
 
@@ -371,6 +381,7 @@ h3 {
     margin-bottom: 40px;
 }
 
+/* styles icons */
 .contact-col div .fa {
     font-size: 28px;
     color: #51009A;
@@ -418,6 +429,8 @@ h3 {
     font-weight: 400;
 }
 
+
+/* defines layout of the input fields */
 .contact-col input,
 .contact-col textarea {
     width: 100%;
